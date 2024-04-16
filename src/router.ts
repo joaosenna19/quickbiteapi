@@ -20,8 +20,6 @@ router.get('/food/:id', getFoodById)
 router.get('/food', getFoods);
 router.post('/food', createFood);
 
-
-
 // WAITER
 router.post('/waiter', createWaiter);
 router.get('/waiter/:id', getWaiterById);

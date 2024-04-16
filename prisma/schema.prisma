@@ -45,6 +45,7 @@ model Reservation {
   reservationCode String  @unique @default(cuid())
   nOfCustomers    Int
   isFullfilled    Boolean @default(false)
+  time            String
 
   Table    Table    @relation(fields: [tableId], references: [id])
 }
